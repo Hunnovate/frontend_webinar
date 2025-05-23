@@ -261,25 +261,25 @@
                 
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Send Us a Message</h3>
-                    <form class="space-y-4">
+                    <form class="space-y-4" id="contact-form">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
+                            <input type="text" name="name" id="form_name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
                         </div>
                         
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
+                            <input type="email" name="email" id="form_email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
                         </div>
                         
                         <div>
                             <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
+                            <input type="text" name="subject" id="form_subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
                         </div>
                         
                         <div>
                             <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400"></textarea>
+                            <textarea id="form_message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400"></textarea>
                         </div>
                         
                         <button type="submit" class="bg-yellow-400 text-black px-6 py-3 rounded-lg font-medium hover:bg-yellow-500 transition w-full">Send Message</button>
@@ -294,66 +294,8 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Frequently Asked Questions</h2>
             
-            <div class="max-w-3xl mx-auto space-y-4">
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <button class="faq-toggle w-full flex justify-between items-center text-left">
-                        <h3 class="font-semibold text-lg">How long does delivery take?</h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 transform transition-transform" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <div class="faq-content mt-3 text-gray-600 hidden">
-                        <p>Most orders are delivered within 2-3 business days. For remote areas, delivery may take up to 5 business days. You'll receive a tracking number as soon as your order ships.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <button class="faq-toggle w-full flex justify-between items-center text-left">
-                        <h3 class="font-semibold text-lg">What payment methods do you accept?</h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 transform transition-transform" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <div class="faq-content mt-3 text-gray-600 hidden">
-                        <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, Apple Pay, Google Pay, and cryptocurrency payments through our partner services.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <button class="faq-toggle w-full flex justify-between items-center text-left">
-                        <h3 class="font-semibold text-lg">Can I return products if I'm not satisfied?</h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 transform transition-transform" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <div class="faq-content mt-3 text-gray-600 hidden">
-                        <p>Yes! We offer a 30-day no-questions-asked return policy. Items must be in original condition with all tags attached. Simply initiate a return through your account dashboard and we'll email you a prepaid return label.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <button class="faq-toggle w-full flex justify-between items-center text-left">
-                        <h3 class="font-semibold text-lg">Do you offer student discounts?</h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 transform transition-transform" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <div class="faq-content mt-3 text-gray-600 hidden">
-                        <p>Absolutely! We offer a 15% discount for students. Just verify your student status through our partner SheerID during checkout to receive your discount. This can be combined with select other promotions.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <button class="faq-toggle w-full flex justify-between items-center text-left">
-                        <h3 class="font-semibold text-lg">How do I track my order?</h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 transform transition-transform" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <div class="faq-content mt-3 text-gray-600 hidden">
-                        <p>Once your order ships, you'll receive an email with a tracking number. You can click the tracking link in the email or log into your Easy Sales account to view real-time shipping updates. Our app also sends push notifications for major shipping milestones.</p>
-                    </div>
-                </div>
+            <div class="max-w-3xl mx-auto space-y-4" id="faq-list">
+
             </div>
         </div>
     </section>
@@ -446,33 +388,61 @@
         </div>
     </footer>
 
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script>
         // FAQ Toggle functionality
-        document.querySelectorAll('.faq-toggle').forEach(button => {
-            button.addEventListener('click', () => {
-                const faqContent = button.nextElementSibling;
-                const icon = button.querySelector('svg');
-                
-                // Toggle the content
-                faqContent.classList.toggle('hidden');
-                
-                // Rotate the icon
-                if (faqContent.classList.contains('hidden')) {
-                    icon.classList.remove('rotate-180');
-                } else {
-                    icon.classList.add('rotate-180');
-                }
+        function setupFaqToggles() {
+            document.querySelectorAll('.faq-toggle').forEach(button => {
+                button.addEventListener('click', () => {
+                    const faqContent = button.nextElementSibling;
+                    const icon = button.querySelector('svg');
+                    
+                    // Toggle the content
+                    faqContent.classList.toggle('hidden');
+                    
+                    // Rotate the icon
+                    if (faqContent.classList.contains('hidden')) {
+                        icon.classList.remove('rotate-180');
+                    } else {
+                        icon.classList.add('rotate-180');
+                    }
+                });
             });
-        });
+        }
 
-        // Simple form submission handler (would be replaced with actual form handling in production)
-        document.querySelectorAll('form').forEach(form => {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                alert('Thanks for your submission! This would be processed in a real application.');
-                form.reset();
+        // Initial setup for static FAQ
+        setupFaqToggles();
+
+        // Fetch FAQ dynamically
+        fetch('https://core.hisend.hunnovate.com/api/v1/projects/easy_sales/tables/faq/records?api_key=dev_5IVx3nn10KlwAf74VYbPbAQ0')
+            .then(response => response.json())
+            .then(response => {
+                const faqs = response.data;
+                const faqList = document.getElementById('faq-list');
+                faqs.forEach(faq => {
+                    const faqItem = document.createElement('div');
+                    faqItem.className = 'bg-white p-6 rounded-xl shadow-sm';
+                    faqItem.innerHTML = `
+                        <button class="faq-toggle w-full flex justify-between items-center text-left">
+                            <h3 class="font-semibold text-lg">${faq.title}</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 transform transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="faq-content mt-3 text-gray-600 hidden">
+                            <p>${faq.content}</p>
+                        </div>
+                    `;
+                    faqList.appendChild(faqItem);
+                });
+                // Setup toggles for dynamically added FAQs
+                setupFaqToggles();
+            })
+            .catch(error => {
+                console.error('Error fetching FAQs:', error);
             });
-        });
     </script>
 </body>
 </html>
