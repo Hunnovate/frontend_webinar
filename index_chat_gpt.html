@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy Sales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+  <!-- Hero Section -->
+  <section class="bg-yellow-400 bg-[url('https://images.unsplash.com/photo-1523275335684-37898b6baf30')] bg-cover bg-center text-black py-20 px-6 text-center">
+    <h1 class="text-5xl font-extrabold mb-4">Welcome to Easy Sales</h1>
+    <p class="text-xl mb-6">Your Gen Z approved E-Commerce Hub</p>
+    <button class="bg-black text-white px-8 py-3 rounded-full text-lg hover:bg-gray-800 transition">Get Started</button>
+  </section>
+
+  <!-- Product List -->
+  <section class="py-16 px-6 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-10">Featured Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x200" alt="Product 1" class="w-full rounded mb-3">
+        <h3 class="text-xl font-semibold">Product 1</h3>
+        <p class="text-gray-600">Short product description.</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x200" alt="Product 2" class="w-full rounded mb-3">
+        <h3 class="text-xl font-semibold">Product 2</h3>
+        <p class="text-gray-600">Short product description.</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x200" alt="Product 3" class="w-full rounded mb-3">
+        <h3 class="text-xl font-semibold">Product 3</h3>
+        <p class="text-gray-600">Short product description.</p>
+      </div>
+    </div>
+    <div class="text-center mt-10">
+      <button class="bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-300 transition">View More</button>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="bg-gray-100 py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Contact Us</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div>
+        <p class="mb-2"><strong>Phone:</strong> +234 800 123 4567</p>
+        <p class="mb-2"><strong>Email:</strong> contact@easysales.com</p>
+        <p><strong>Address:</strong> 123 E-Commerce St, Lagos, Nigeria</p>
+      </div>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-3 border rounded">
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded">
+        <textarea placeholder="Message" class="w-full p-3 border rounded h-32"></textarea>
+        <button type="submit" class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-white py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <div>
+        <h3 class="font-semibold text-lg">What is Easy Sales?</h3>
+        <p class="text-gray-600">Easy Sales is a modern e-commerce platform designed to meet the shopping needs of Gen Z.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg">How can I track my order?</h3>
+        <p class="text-gray-600">Once you place an order, you’ll receive a tracking link via email or SMS.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg">What payment methods do you accept?</h3>
+        <p class="text-gray-600">We accept credit/debit cards, PayPal, and bank transfers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription Section -->
+  <section class="bg-yellow-400 py-16 px-6 text-center text-black">
+    <h2 class="text-3xl font-bold mb-4">Stay in the Loop</h2>
+    <p class="mb-6">Subscribe to get the latest deals and updates from Easy Sales</p>
+    <form class="max-w-xl mx-auto flex flex-col sm:flex-row gap-4">
+      <input type="email" placeholder="Enter your email" class="flex-1 p-3 rounded">
+      <button type="submit" class="bg-black text-white px-6 py-3 rounded hover:bg-gray-800">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-8 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <p>&copy; 2025 Easy Sales. All rights reserved.</p>
+      <div class="space-x-4 mt-4 sm:mt-0">
+        <a href="#" class="hover:underline">Privacy Policy</a>
+        <a href="#" class="hover:underline">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
